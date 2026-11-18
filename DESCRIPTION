@@ -12,7 +12,7 @@ Description: Tools for statistical analysis of assembled transcriptomes,
     including flexible differential expression analysis, visualization of
     transcript structures, and matching of assembled transcripts to annotation.
 Depends:
-    R (>= 3.1.1),
+    R (>= 4.6.0),
     methods
 Imports:
     GenomicRanges (>= 1.17.25),
@@ -24,7 +24,11 @@ Imports:
     limma,
     rtracklayer (>= 1.29.25),
     Biobase (>= 2.25.0),
-    Seqinfo
+    Seqinfo,
+    grDevices,
+    graphics,
+    stats,
+    utils
 Suggests:
     testthat,
     knitr,

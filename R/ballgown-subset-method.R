@@ -48,15 +48,15 @@ setMethod("subset", "ballgown", function(x, cond, genomesubset=TRUE){
     
         inttmp = split(indexes(x)$i2t$i_id, indexes(x)$i2t$t_id)
         theint = as.numeric(unique(unlist(inttmp[names(inttmp) %in% thetx])))
-        intron = subset(expr(x)$intron, i_id %in% theint)
+        intron = expr(x)$intron[expr(x)$intron$i_id %in% theint, , drop=FALSE]
     
         extmp = split(indexes(x)$e2t$e_id, indexes(x)$e2t$t_id)
         theex = as.numeric(unique(unlist(extmp[names(extmp) %in% thetx])))
-        exon = subset(expr(x)$exon, e_id %in% theex)
+        exon = expr(x)$exon[expr(x)$exon$e_id %in% theex, , drop=FALSE]
     
-        e2t = subset(indexes(x)$e2t, t_id %in% thetx)
-        i2t = subset(indexes(x)$i2t, t_id %in% thetx)
-        t2g = subset(indexes(x)$t2g, t_id %in% thetx)
+        e2t = indexes(x)$e2t[indexes(x)$e2t$t_id %in% thetx, , drop=FALSE]
+        i2t = indexes(x)$i2t[indexes(x)$i2t$t_id %in% thetx, , drop=FALSE]
+        t2g = indexes(x)$t2g[indexes(x)$t2g$t_id %in% thetx, , drop=FALSE]
     
         introngr = structure(x)$intron[elementMetadata(structure(x)$intron)$id 
             %in% theint]
