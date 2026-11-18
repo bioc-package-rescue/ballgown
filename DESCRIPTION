@@ -34,6 +34,7 @@ Suggests:
     knitr,
     markdown
 VignetteBuilder: knitr
+Encoding: UTF-8
 BugReports: https://github.com/alyssafrazee/ballgown/issues
 biocViews: ImmunoOncology, RNASeq, StatisticalMethod, Preprocessing, DifferentialExpression
 Config/roxygen2/version: 8.1.1

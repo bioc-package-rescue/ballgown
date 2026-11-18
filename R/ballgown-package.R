@@ -2,7 +2,6 @@
 #'
 #' @name ballgown-package
 #' @aliases ballgownp
-#' @docType package
 #' @import GenomicRanges
 #' @import IRanges
 #' @import S4Vectors
@@ -17,4 +16,4 @@
 #' @importFrom stats as.dist cutree hclust kmeans model.matrix p.adjust
 #' @importFrom utils read.table write.table
 #' @description Super awesome transcript-level expression analysis
-NULL
+"_PACKAGE"
