@@ -8,3 +8,23 @@
 \description{
 Super awesome transcript-level expression analysis
 }
+\seealso{
+Useful links:
+\itemize{
+  \item Report bugs at \url{https://github.com/alyssafrazee/ballgown/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Alyssa C. Frazee \email{alyssa.frazee@gmail.com}
+
+Authors:
+\itemize{
+  \item Alyssa C. Frazee \email{alyssa.frazee@gmail.com}
+  \item Jack Fu \email{jmfu@jhsph.edu}
+  \item Leonardo Collado-Torres \email{lcollado@jhu.edu}
+  \item Andrew E. Jaffe
+  \item Jeffrey T. Leek \email{jtleek@gmail.com} [thesis advisor]
+}
+
+}

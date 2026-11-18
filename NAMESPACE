@@ -67,27 +67,35 @@ import(RColorBrewer)
 import(S4Vectors)
 import(methods)
 import(splines)
-importFrom(Biobase,"pData<-")
-importFrom(Biobase,pData)
-importFrom(Biobase,sampleNames)
+importFrom(Biobase,
+  "pData<-",
+  pData,
+  sampleNames
+)
 importFrom(Seqinfo,seqnames)
 importFrom(grDevices,heat.colors)
-importFrom(graphics,abline)
-importFrom(graphics,axis)
-importFrom(graphics,legend)
-importFrom(graphics,lines)
-importFrom(graphics,par)
-importFrom(graphics,polygon)
-importFrom(graphics,text)
-importFrom(graphics,title)
+importFrom(graphics,
+  abline,
+  axis,
+  legend,
+  lines,
+  par,
+  polygon,
+  text,
+  title
+)
 importFrom(limma,lmFit)
 importFrom(rtracklayer,import)
-importFrom(stats,as.dist)
-importFrom(stats,cutree)
-importFrom(stats,hclust)
-importFrom(stats,kmeans)
-importFrom(stats,model.matrix)
-importFrom(stats,p.adjust)
+importFrom(stats,
+  as.dist,
+  cutree,
+  hclust,
+  kmeans,
+  model.matrix,
+  p.adjust
+)
 importFrom(sva,f.pvalue)
-importFrom(utils,read.table)
-importFrom(utils,write.table)
+importFrom(utils,
+  read.table,
+  write.table
+)
